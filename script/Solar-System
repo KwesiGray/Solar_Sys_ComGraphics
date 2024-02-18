@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="script/aframe.min.js"></script>
+</head>
+
+<body>
+
+    <a-scene>
+
+        <a-sky color="black"></sky>
+            <a-assets>
+
+                <img src="texture\2k_earth_daymap.jpg">
+
+
+            </a-assets>
+
+            <!--center as sun-->
+            <a-entity geometry="primitive: torus; radiusTubular: 0.015; radius:10" ; color="blue" ; rotation="-90 0 0" ; position="0 0 0" side="double" ;>
+
+                <!--sun-->
+                <a-sphere color="red" radius="7.5" rotation="0 0 0" side="double"></a-sphere>
+
+                <!--first planet-->
+
+                <a-sphere radius="1" color="blue" position="10 0 0" side="double"></a-sphere>
+            </a-entity>
+
+
+            <!--second planet-->
+            <a-entity geometry="primitive: torus; radiusTubular: 0.015; radius:15" ; color="blue" ; rotation="-90 0 0" ; position="0 0 0">
+
+                <a-sphere color="pink" radius="1.3" position="15 2 0" side="double"></a-sphere>
+            </a-entity>
+
+            <!--third planet-->
+            <a-entity geometry="primitive: torus; radiusTubular: 0.015; radius:20" ; color="blue" ; rotation="-90 0 0" ; position="0 0 0">
+
+                <a-sphere color="" radius="1.5" position="20 -2 0" side="double" src=t exture\2k_earth_daymap.jpg></a-sphere>
+            </a-entity>
+
+            <!--forth planet-->
+            <a-entity geometry="primitive: torus; radiusTubular: 0.015; radius:25" ; color="blue" ; rotation="-90 0 0" ; position="0 0 0">
+
+                <a-sphere color="brown" radius="1.4" position="-25 3 0" side="double"></a-sphere>
+            </a-entity>
+
+            <!--fifth planet-->
+            <a-entity geometry="primitive: torus; radiusTubular: 0.015; radius:30" ; color="blue" ; rotation="-90 0 0" ; position="0 0 0">
+
+                <a-sphere color="green" radius="3" position="-29.5 -6 0" side="double"></a-sphere>
+            </a-entity>
+
+            <!--sixth planet-->
+            <a-entity geometry="primitive: torus; radiusTubular: 0.015; radius:30" ; color="gray" ; rotation="-90 0 0" ; position="0 0 0">
+
+                <a-sphere color="yellow" radius="4.5" position="35.8 5 0" side="double"></a-sphere>
+            </a-entity>
+
+            <!--seventh planet-->
+            <a-entity animation="property: rotation; to: 0 360 0; loop:true; easing: linear; dur: 10000s;" position="0 0 0">
+                <a-sphere color="pink" radius="3.5" position="-43 0 0" side="double"></a-sphere>
+            </a-entity>
+
+            <a-entity geometry="primitive: torus; radiusTubular: 0.015; radius:43" ; color="pink" ; rotation="-90 0 0" ; position="0 0 0">
+            </a-entity>
+
+
+            <!--eight planet-->
+            <a-entity geometry="primitive: torus; radiusTubular: 0.015; radius:50" ; color="pink" ; rotation="-90 0 0" ; position="0 0 0">
+
+                <a-sphere color="pink" radius="2.5" position="-34.5 -35 0" side="double"></a-sphere>
+            </a-entity>
+
+            <a-entity light="type: ambient; color: #BBB"></a-entity>
+            <a-entity light="type: directional; color: #FFF; intensity: 0.9" position="75 1.25 -6"></a-entity>
+
+
+            <!--ninth planet-->
+            <a-entity animation="property: rotation; to: 0 360 0; loop:true; easing: linear; dur: 10000s;" position="0 0 0">
+                <a-sphere color="pink" radius="1.5" position="-60 0 0" side="double"></a-sphere>
+            </a-entity>
+
+            <a-entity geometry="primitive: torus; radiusTubular: 0.015; radius:60" ; color="pink" ; rotation="-90 0 0" ; position="0 0 0">
+            </a-entity>
+    </a-scene>
+</body>
